@@ -6,7 +6,7 @@ import io.restassured.common.mapper.TypeRef;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
-import listeners.CustomTpl;
+import utils.CustomTpl;
 import models.fakeStoreApiUserModels.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 import static io.restassured.RestAssured.given;
 
 
-public class SimpleApiTestsRefactor {
+public class SimpleApiTestsWithRefactoring {
 
     @BeforeAll
     public static void setUp() {

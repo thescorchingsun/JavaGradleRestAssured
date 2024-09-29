@@ -1,5 +1,6 @@
 package models.swaggerModels;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -14,6 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)//игнорировать незаполненное значение
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class FullUser {
 
     @JsonProperty("pass")

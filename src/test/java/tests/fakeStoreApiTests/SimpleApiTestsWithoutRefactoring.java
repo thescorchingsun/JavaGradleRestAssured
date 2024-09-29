@@ -21,7 +21,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 
-public class SimpleApiTests {
+public class SimpleApiTestsWithoutRefactoring {
 
     //Тесты без рефакторинга
 
